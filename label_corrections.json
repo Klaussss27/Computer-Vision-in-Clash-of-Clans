@@ -1,0 +1,20 @@
+{
+  "source_archive_sha256": "534592e3ed0a07aa7b561ada55357597a8f6ee49496c63a4b449c1c4d1bc2c6f",
+  "review_method": "Visual contact-sheet scan of 3089 annotated crops. Does not certify missing annotations or bounding box precision.",
+  "remove": [
+    {
+      "split": "train",
+      "stem": "6e0031753e48381277cb25ec",
+      "source_name": "th5_war_1719.jpg",
+      "remove_line": "1 0.67950684 0.53225159 0.04700195 0.12226216",
+      "reason": "Round elixir storage incorrectly labeled as an elixir collector; verified in full source frame."
+    },
+    {
+      "split": "train",
+      "stem": "6e0031753e48381277cb25ec",
+      "source_name": "th5_war_1719.jpg",
+      "remove_line": "1 0.33116211 0.51130021 0.04779297 0.12141649",
+      "reason": "Round elixir storage incorrectly labeled as an elixir collector; verified in full source frame."
+    }
+  ]
+}

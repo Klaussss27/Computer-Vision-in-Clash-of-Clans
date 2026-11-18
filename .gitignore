@@ -1,0 +1,46 @@
+__pycache__/
+.venv/
+.venv-ml/
+preview.png
+dashboard-frame*.png
+logs/
+config.tmp.json
+.runtime/
+vision-frame*.png
+vision-overlay.png
+vision-plan.json
+data/
+runs/
+models/
+*.pt
+*.zip
+*.mp4
+*.mkv
+*.mov
+evaluation/
+
+# Local configuration, calibration, and annotations
+/config.json
+/wall_annotations.json
+/boundary_annotations.json
+/video_expectations.json
+/evaluation_labels/
+templates/**/provenance*.json
+
+# Secrets and workstation files
+.env
+.env.*
+!.env.example
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Tool caches and release output
+.ruff_cache/
+.pytest_cache/
+*.pyc
+*.log
+*.tmp
+dist/

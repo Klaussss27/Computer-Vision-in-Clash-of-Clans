@@ -1,0 +1,8 @@
+[
+  {"action": "click", "point": [300, 670]},
+  {"action": "click", "point": [100, 300], "count": 10, "interval": 0.2},
+  {"action": "click", "point": [1100, 300], "count": 10, "interval": 0.2},
+  {"action": "wait", "seconds": 5},
+  {"action": "click", "point": [360, 670]},
+  {"action": "click", "point": [100, 400], "count": 5, "interval": 0.5}
+]

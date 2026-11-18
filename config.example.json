@@ -1,0 +1,297 @@
+{
+  "window_title": "Clash of Clans",
+  "capture_size": [
+    1920,
+    1080
+  ],
+  "tesseract_cmd": "C:/Program Files/Tesseract-OCR/tesseract.exe",
+  "minimum_loot": {
+    "gold": 300000,
+    "elixir": 300000,
+    "dark_elixir": 3000
+  },
+  "loot_regions": {
+    "gold": [
+      78,
+      110,
+      150,
+      36
+    ],
+    "elixir": [
+      78,
+      156,
+      160,
+      37
+    ],
+    "dark_elixir": [
+      78,
+      204,
+      95,
+      37
+    ]
+  },
+  "buttons": {
+    "next": [
+      1775,
+      806
+    ],
+    "end_battle": [
+      111,
+      849
+    ],
+    "attack": [
+      105,
+      985
+    ],
+    "find_match": [
+      275,
+      758
+    ],
+    "confirm_attack": [
+      1625,
+      921
+    ],
+    "confirm_surrender": [
+      1134,
+      670
+    ],
+    "return_home": [
+      960,
+      932
+    ]
+  },
+  "attack_steps": [],
+  "templates": {
+    "scouting": "templates/interface/scouting.png",
+    "home": "templates/interface/home.png",
+    "attack_menu": "templates/interface/attack_menu.png",
+    "army_confirmation": "templates/interface/army_confirmation.png",
+    "battle": "templates/interface/battle.png",
+    "surrender": "templates/interface/surrender.png",
+    "results": "templates/interface/results.png"
+  },
+  "template_confidence": 0.9,
+  "max_searches": 20,
+  "battle_timeout_seconds": 240,
+  "click_delay_seconds": 0.3,
+  "army_slots": {
+    "sneaky_goblins": [
+      330,
+      1005
+    ],
+    "jump_spell": [
+      978,
+      1005
+    ]
+  },
+  "attack_mode": "visual",
+  "vision": {
+    "template_dir": "templates/objects",
+    "playfield": [
+      0,
+      0,
+      1920,
+      905
+    ],
+    "confidence": 0.88,
+    "scales": [
+      0.5,
+      0.65,
+      0.8,
+      0.9,
+      1.0,
+      1.1
+    ],
+    "grid_size": 8,
+    "goblin_budget": 60,
+    "jump_budget": 0,
+    "goblins_per_batch": 3,
+    "max_batches_per_target": 2,
+    "target_wait_seconds": 8,
+    "max_targets": 8,
+    "max_zoom_out_ticks": 6,
+    "max_wall_band_pixels": 64,
+    "backend": "hybrid",
+    "model_path": "models/collectors-scouting-23.pt",
+    "model_confidence": 0.6,
+    "model_image_size": 1280,
+    "model_device": "cpu",
+    "model_edge_margin": 3,
+    "geometry_validated": false,
+    "use_jump_spells": false,
+    "boundary_mode": "visible",
+    "terrain_guard": true,
+    "max_approach_pixels": 240,
+    "approach_slack_pixels": 32,
+    "ui_exclusions": [
+      [
+        0,
+        0,
+        300,
+        260
+      ],
+      [
+        1560,
+        0,
+        360,
+        210
+      ],
+      [
+        0,
+        810,
+        480,
+        270
+      ],
+      [
+        1640,
+        750,
+        280,
+        330
+      ],
+      [
+        860,
+        0,
+        200,
+        110
+      ]
+    ],
+    "structure_template_dir": "templates/structures-v2",
+    "structure_confidence": 0.8
+  },
+  "army_detection": {
+    "region": [
+      0,
+      910,
+      1920,
+      170
+    ],
+    "confidence": 0.9,
+    "ambiguity_margin": 0.03,
+    "count_offset": [
+      18,
+      -42,
+      66,
+      28
+    ],
+    "templates": {
+      "sneaky_goblins": "templates\\army\\sneaky_goblins.png",
+      "jump_spell": "templates\\army\\jump_spell.png"
+    },
+    "empty_templates": {
+      "sneaky_goblins": "templates/army/sneaky_goblins-empty.png"
+    },
+    "variant_templates": {
+      "sneaky_goblins": [
+        {
+          "path": "templates/army/sneaky_goblins-selected.png",
+          "count_offset": [
+            48,
+            -59,
+            43,
+            32
+          ]
+        }
+      ]
+    },
+    "empty_count_templates": {
+      "sneaky_goblins": "templates/army/sneaky_goblins-zero.png"
+    },
+    "count_offsets": {
+      "sneaky_goblins": [
+        48,
+        -44,
+        43,
+        32
+      ]
+    },
+    "empty_count_offsets": {
+      "sneaky_goblins": [
+        -16,
+        -45,
+        110,
+        34
+      ]
+    },
+    "count_thresholds": {
+      "sneaky_goblins": [
+        160,
+        175
+      ]
+    }
+  },
+  "army_confirmation_detection": {
+    "region": [
+      830,
+      310,
+      600,
+      390
+    ],
+    "confidence": 0.9,
+    "ambiguity_margin": 0.03,
+    "count_offsets": {
+      "sneaky_goblins": [
+        -19,
+        -31,
+        69,
+        27
+      ],
+      "jump_spell": [
+        -25,
+        -31,
+        65,
+        27
+      ]
+    },
+    "templates": {
+      "sneaky_goblins": "templates/army_confirmation/sneaky_goblins.png",
+      "jump_spell": "templates/army_confirmation/jump_spell.png"
+    }
+  },
+  "session": {
+    "readiness": "confirmation"
+  },
+  "result_regions": {
+    "gold": [
+      810,
+      471,
+      197,
+      49
+    ],
+    "elixir": [
+      810,
+      544,
+      197,
+      50
+    ],
+    "dark_elixir": [
+      861,
+      618,
+      146,
+      47
+    ]
+  },
+  "result_ocr_modes": {
+    "dark_elixir": [
+      215,
+      220
+    ],
+    "elixir": [
+      160,
+      190
+    ]
+  },
+  "loot_ocr_modes": {
+    "dark_elixir": [
+      160,
+      175
+    ]
+  },
+  "template_variants": {
+    "battle": [
+      "templates/interface/battle-zoom-3.png",
+      "templates/interface/battle-zoom-4.png",
+      "templates/interface/battle-zoom-5.png",
+      "templates/interface/battle-zoom-6.png"
+    ]
+  }
+}
